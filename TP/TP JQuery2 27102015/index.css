@@ -1,0 +1,27 @@
+
+#mos {
+    height:100px;
+    width:100px;
+    background-color:#FF0000;
+    border-radius:5px;
+}
+
+.trouve {
+    background: blue;
+}
+
+.navigation li  {
+background-color: black;
+}
+
+.navigation li a {
+display: inline-block;
+}
+
+#navigation a {
+	color: white;
+}
+
+#navigation active {
+
+}

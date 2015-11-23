@@ -1,0 +1,156 @@
+	
+
+    #!/bin/sh
+     
+    clear
+     
+    echo "======================="
+    echo " Lancement du script.. "
+    echo "======================="
+    sleep 2
+     
+    cd /home/
+     
+    while true
+    do
+    useradd --home /home/fx fx
+    user=$(cut -d: -f1 < /etc/passwd | grep fx)
+    if [ "${user}" = "fx" ]; then
+        echo -e "\r\e[0;32m[OK]\e[0m Creation utilisateur                "
+        break
+    else
+        echo -e "\r\e[0;31m[Erreur] Creation utilisateur                 "
+    fi
+    done
+    echo OK
+    while true
+    do
+    useradd --home /home/yannick yannick
+    user=$(cut -d: -f1 < /etc/passwd | grep yannick)
+    if [ "${user}" = "yannick" ]; then
+        echo -e "\r\e[0;32m[OK]\e[0m Creation utilisateur                "
+        break
+    else
+        echo -e "\r\e[0;31m[Erreur] Creation utilisateur                 "
+    fi
+    done
+    echo OK
+    while true
+    do
+    useradd --home /home/ameline ameline
+    user=$(cut -d: -f1 < /etc/passwd | grep ameline)
+    if [ "${user}" = "ameline" ]; then
+        echo -e "\r\e[0;32m[OK]\e[0m Creation utilisateur                "
+        break
+    else
+        echo -e "\r\e[0;31m[Erreur] Creation utilisateur                 "
+    fi
+    done
+    echo OK
+    while true
+    do
+    useradd --home /home/stephanie stephanie
+    user=$(cut -d: -f1 < /etc/passwd | grep stephanie)
+    if [ "${user}" = "stephanie" ]; then
+        echo -e "\r\e[0;32m[OK]\e[0m Creation utilisateur                "
+        break
+    else
+        echo -e "\r\e[0;31m[Erreur] Creation utilisateur                 "
+    fi
+    done
+    echo OK
+    while true
+    do
+    useradd --home /home/tata tata
+    user=$(cut -d: -f1 < /etc/passwd | grep tata)
+    if [ "${user}" = "tata" ]; then
+        echo -e "\r\e[0;32m[OK]\e[0m Creation utilisateur                "
+        break
+    else
+        echo -e "\r\e[0;31m[Erreur] Creation utilisateur                 "
+    fi
+    done
+    echo OK
+    while true
+    do
+    useradd --home /home/toto toto
+    user=$(cut -d: -f1 < /etc/passwd | grep toto)
+    if [ "${user}" = "toto" ]; then
+        echo -e "\r\e[0;32m[OK]\e[0m Creation utilisateur                "
+        break
+    else
+        echo -e "\r\e[0;31m[Erreur] Creation utilisateur                 "
+    fi
+    done
+    echo OK
+    while true
+    do
+    useradd --home /home/titi titi
+    user=$(cut -d: -f1 < /etc/passwd | grep titi)
+    if [ "${user}" = "titi" ]; then
+        echo -e "\r\e[0;32m[OK]\e[0m Creation utilisateur                "
+        break
+    else
+        echo -e "\r\e[0;31m[Erreur] Creation utilisateur                 "
+    fi
+    done
+     
+    sleep 2
+     
+    rm -rf /home/fx > /dev/null
+    echo Dossier del
+    rm -rf /home/yannick > /dev/null
+    echo Dossier del
+    rm -rf /home/ameline > /dev/null
+    echo Dossier del
+    rm -rf /home/stephanie > /dev/null
+    echo Dossier del
+    rm -rf /home/tata > /dev/null
+    echo Dossier del
+    rm -rf /home/titi > /dev/null
+    echo Dossier del
+    rm -rf /home/toto > /dev/null
+    echo Dossier del
+     
+    sleep 2
+     
+     
+    mkdir /home/profs
+    mkdir /home/eleves
+    mkdir /home/administratif
+    mkdir /home/commun
+    mkdir /home/education
+    mkdir /home/direction
+    echo OK création OK
+     
+    addgroup eleves > /dev/null
+    addgroup profs > /dev/null
+    addgroup administratif > /dev/null
+    addgroup education > /dev/null
+    addgroup direction > /dev/null
+     
+    echo Créa groupe OK
+     
+    usermod -a -G eleves,education titi
+    usermod -a -G eleves,education tata
+    usermod -a -G eleves,education toto
+     
+    usermod -a -G profs,education,direction yannick
+    usermod -a -G profs,education,direction fx
+     
+    usermod -a -G administratif,direction stephanie
+    usermod -a -G administratif,direction ameline
+     
+    echo Usermod OK
+     
+    chown -R root:eleves /home/eleves && chmod -R 770 /home/eleves/
+    chown -R root:profs /home/profs && chmod -R 770 /home/eleves/
+    chown -R root:administratif /home/administratif && chmod -R 770 /home/eleves/
+    chown -R root:direction /home/direction && chmod -R 770 /home/eleves/
+    chown -R root:education /home/education && chmod -R 770 /home/education/
+    chmod -R 777 /home/commun
+     
+    echo chown OK
+
+
+

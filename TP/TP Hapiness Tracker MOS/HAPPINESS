@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<link rel="icon" type="image/png" href="images/happyface
+
+
+		.png">
+	  	<title>Happiness Tracker</title>
+		<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+		<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+		<link rel="stylesheet" type="text/css" href="css/jquery-ui.css">
+		<link rel="stylesheet" type="text/css" href="style.css">
+		<title>HAPPINESS TRACKER des bulots codeurs</title>
+	</head>
+	<body>
+		<div class="row">
+			<div class="col-xs-17"><h2>HAPPINESS TRACKERS des bulots codeurs</h2></div>
+		</div>
+		<div id="tabs">
+			<ul>
+				<li><a href="#user">User</a></li>
+				<li><a href="#formulaire">Formulaire</a></li>
+				<li><a href="#stats">Stats</a></li>
+				<li><a href="#liens">Liens</a></li>
+				<li><a href="#reseaux-sociaux">Réseaux Sociaux</a></li>
+			</ul>
+			<div id="user">
+				<div id="bouton-user" class="row">
+					<div class="col-xs-3"><a href="#"><img src="images/arthur.png" title="Arthur BOGNOT"></a></div>
+					<div class="col-xs-3"><a href="#"><img src="images/Cyril.png" title="Cyril LAUDET"></a></div>
+					<div class="col-xs-3"><a href="#"><img src="images/davidkat.png" title="David KATANA"></a></div>
+					<div class="col-xs-3"><a href="#"><img src="images/guillaume-d.png" title="Guillaume DUBOIS"></a></div>
+					<div class="col-xs-3"><a href="#"><img src="images/guitou.png" title="Guillaume FLOCH"></a></div>
+					<div class="col-xs-3"><a href="#"><img src="images/guillaume-m.png" title="Guillaume MOERIS"></a></div>
+					<div class="col-xs-3"><a href="#"><img src="images/gwen.png" title="Gwen CHAUVIN"></a></div>
+					<div class="col-xs-3"><a href="#"><img src="images/louis.png" title="Louis CHARBONNEL"></a></div>
+					<div class="col-xs-3"><a href="#"><img src="images/maryline.png" title="Maryline PETITJEAN"></a></div>
+					<div class="col-xs-3"><a href="#"><img src="images/mike.png" title="Mickaël GERMAIN"></a></div>
+					<div class="col-xs-3"><a href="#"><img src="images/micka.png" title="Mickaël REGO"></a></div>
+					<div class="col-xs-3"><a href="#"><img src="images/migoo.png" title="Miguel LOUIS"></a></div>
+					<div class="col-xs-3"><a href="#"><img src="images/phil.png" title="Philippe MESSAGER"></a></div>
+					<div class="col-xs-3"><a href="#"><img src="images/rishi.png" title="Rishi GARUD"></a></div>
+					<div class="col-xs-3"><a href="#"><img src="images/thomas.png" title="Thomas KABECHE"></a></div>
+					<div class="col-xs-3"><a href="#"><img src="images/valentin.png" title="Valentin DEVILLE"></a></div>
+					<div class="col-xs-3"><a href="#"><img src="images/vincent.png" title="Vincent LYLES"></a></div>
+					</div>
+					</div>
+			<div id="formulaire">
+				<form>
+					<div>
+						<p>Date: <input type="text" id="datepicker"></p>
+					</div>
+					<div id="labels">
+						<label for="growth-code">Growth in code :</label>
+						<input type="text" id="growth-code" readonly>
+						<div id="slider-growth-code"></div>
+						<label for="happiness-code">Happiness in code :</label>
+						<input type="text" id="happiness-code" readonly>
+						<div id="slider-happiness-code"></div>
+						<label for="happiness-life">Happiness in life :</label>
+						<input type="text" id="happiness-life" readonly>
+						<div id="slider-happiness-life"></div>
+					</div>
+					<div id="accordion">
+						<h3>Commentaires</h3>
+						<div><textarea placeholder="Entrez vos commentaires..." rows="5" cols="50"></textarea></div>
+					</div>
+			<button id="check">Valider</button>
+			<div id="dialog-confirm" class="boxmodal" title="Êtes-vous sûr d'avoir indiqué les bonnes informations ?">
+  				<p><span class="ui-icon ui-icon-alert" style="float:left; margin:0 7px 20px 0;"></span>En validant, les informations que vous aurez renseigné seront enregistrées et ne pourront plus être modifiées !<p id="result"></p></p>
+			</div>
+			<div id="dialog-valid" class="boxmodal" title="Bravo !"></div>
+				</form>
+			</div>
+			<div id="stats">
+				<p>Evolution</p>
+			</div>
+			<div id="liens">
+			<li><a href="http://www.mancheopenschool.fr/">Manche Open School</a></li>
+				<li><a href= https://www.codecademy.com/fr>Codecademy</a></li>
+				<li><a href= https://openclassrooms.com>OpenClassRoom</a></li>
+				<li><a href="http://getbootstrap.com/">Bootstrap</a></li>
+				<li><a href="http://jquery.com/">jQuery</a></li>
+				<li><a href="http://jqueryui.com/">jQuery UI (User Interface)</a></li>
+				<li><a href="https://github.com/mancheopenschool">Github Manche Open School</a></li>
+			</div>
+			<div id="reseaux-sociaux">
+				<p>Facebook - LinkedIn - Twitter.</p>
+			</div>
+		</div>
+
+	<div class="barnav"><img id="bulot" src="images/bulot.png"><h1 id="mos">Manche Open School</h1></div>
+
+		<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+		<script type="text/javascript" src="js/bootstrap.min.js"></script>
+		<script type="text/javascript" src="https://code.jquery.com/ui/1.11.4/jquery-ui.min.js"></script>
+		<script type="text/javascript" src="http://jqueryui.com/resources/demos/datepicker/datepicker-fr.js"></script>
+		<script type="text/javascript" src="script.js"></script>
+	</body>
+</html>
+

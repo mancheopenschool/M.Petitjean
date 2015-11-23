@@ -1,0 +1,77 @@
+h1{
+  text-align: center;
+}
+td {
+  font-size: 9pt;
+  }
+span {
+  font-size: 7pt;
+}
+.invisible {
+  border: none;
+}
+.taille {
+  font size: 10px;
+}
+td {
+    border: 1px solid black;
+    height: 60px;
+    width: 60px;
+    text-align: center;
+}
+.dotted{
+  border-style: dotted;
+}
+.dashed{
+  border-style: dashed;
+}
+.legende{
+    height: 20px;
+}
+.textred {
+  color: red;
+}
+.textblue {
+  color: blue;
+}
+.green{
+  background: #A3FFA3;
+}
+.pink{
+  background: #FF5050;
+}
+.cyan {
+  background: #99FFCC;
+}
+.yellow {
+  background: #FFFFB2;
+}
+.saumon {
+  background: #FFDB94;
+}
+.rose {
+  background: #FFCCCC;
+}
+.kaki {
+  background: #CCB280;
+}
+.bleu {
+  background: #CCCCFF;
+}
+.actinides {
+  background: #FF99FF;
+}
+.lantanides {
+  background: #CC99FF;
+}
+@media screen and (max-width:768px) {
+  .news {
+    display: block;
+    width: auto;
+  }
+}
+@media screen and (max-width:520) {
+  .news img{
+    float: none;
+    width: auto;
+  }

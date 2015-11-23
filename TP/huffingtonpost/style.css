@@ -1,0 +1,126 @@
+  
+h1 {
+    font-family: Arial;
+    margin: 2px;
+    text-align: center;
+}
+
+h2 {
+    font-family: Georgia;
+    font-size: 40px;
+    margin: 2px;
+    text-align: center;
+    color: #058B7B;
+}
+
+h3 {
+    font-family: Georgia;
+    margin: 2px;
+}
+
+h4 {
+    font-family: Georgia;
+    margin: 2px;
+    text-align: center;
+    font-size: 14px;
+    color: rgba(0, 0, 0, 0.6);
+}
+
+h5 {
+    font-family: Georgia;
+    margin: 2px;
+}
+
+h6 {
+    font-family: Georgia;
+    margin: 2px;
+}
+
+#BLOG
+{
+text-align: center;
+font-family: Arial;
+font-size: 20px;
+font-weight: bold;
+}
+
+#Blog2titre {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    margin-bottom: 0;
+    padding-bottom: 0;
+    padding-left: 0;
+    margin-left: 0;
+}
+
+form-group {
+  horizontal-align: center;
+  background-size: 100px;
+}
+
+
+.container {
+	border-top: 1px solid #058B7B; 
+}
+
+.col-xs-4 {
+	border-color: grey;
+	border: 2px solid grey;
+}
+.col-xs-6 {
+  text-align: right;
+}
+
+/* navbar */
+.navbar-primary .navbar 
+{ background:#2A7061; border-bottom:none; font-family: Arial; font-weight: bold; text-transform: uppercase;}
+.navbar-primary .navbar .nav > li > a 
+{color: white; padding: 15px;}
+.navbar-primary .navbar .nav > li > a:hover 
+{color: #fff; background-color: #245c4c;}
+.navbar-primary .navbar .nav .active > a,.navbar .nav .active > a:hover 
+{color: #fff; background-color: #1E4F44;}
+.navbar-primary .navbar .nav li > a .caret, .tnav .navbar .nav li > a:hover .caret 
+{border-top-color: #fff;border-bottom-color: #fff;}
+
+.navbar-primary .navbar .nav > li.dropdown.open.active > a:hover {}
+.navbar-primary .navbar .nav > li.dropdown.open > a 
+{color: #fff;background-color: #1E4F44;border-color: #fff;}
+.navbar-primary .navbar .nav > li.dropdown.open.active > a:hover .caret, .tnav .navbar .nav > li.dropdown.open > a .caret 
+{border-top-color: #fff;}
+
+.navbar-primary .navbar .navbar-brand {color:#fff;}
+.navbar-primary .navbar .nav.pull-right {margin-left: 10px; margin-right: 0;}
+
+.navbar-sm .navbar-primary .navbar { min-height:30px; height: 30px; }
+.navbar-sm .navbar-primary .navbar .navbar-brand
+{ padding: 0px 12px;font-size: 16px;line-height: 30px; }
+.navbar-sm .navbar-primary .navbar .navbar-nav > li > a 
+{  padding-top: 0px; padding-bottom: 0px; line-height: 30px; }
+.nav>li>a:focus, .nav>li>a:hover 
+{text-decoration: none; background-color: #1E4F44;}
+.nav>li{background-color: #2A7061;}
+
+.navbar-droite > li
+{background-color: #4DD0EF;}
+
+form-group {
+  size : 50px;
+  position: right;
+}
+
+#list nav {
+    text-align: center; 
+}
+#list-nav li{
+    display: inline-block;
+    padding: 0 5px 0 5px;
+    font-size: 12px;
+    font-family: Arial;
+    text-align: center;
+}
+#list-nav li:hover{
+    text-decoration: underline;
+    cursor: crosshair;
+}

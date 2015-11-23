@@ -1,0 +1,57 @@
+#header {  
+  background: #0098D3;
+  height: 50px;
+  width: 100%;
+}  
+
+#container-fluid{
+  width: 100%;
+  background: #0098D3;
+  min-height: 1200px;
+width: 600px;
+display: block;
+}
+
+#row {
+  horizontal-align: center;
+}
+
+li {
+  color : white;
+}
+
+h1 {
+  color: white;
+  padding-left: 20px;
+}
+
+h3 {
+  color: white;
+  vertical-align: center;
+  font-family: Arial; 
+}
+
+body {
+  background-color: #0098D3;
+  color:#f00;
+}
+
+#footer_text{
+  color:#000;
+  font-family: Arial;
+}
+
+#mos{
+	vertical-align: middle;
+}
+
+footer{
+position:fixed;
+vertical-align: center;
+bottom:0;
+left:0;
+height:30px;
+background: white;
+width: 100%;
+font-size: 20px
+}

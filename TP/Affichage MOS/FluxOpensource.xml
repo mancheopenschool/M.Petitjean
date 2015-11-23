@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="ISO-8859-15" ?>
+<link rel="alternate" type="application/rss+xml" title="{Titre du flux RSS}" href="flux_rss.php" />
+
+
+<rss version="2.0">
+	<channel>
+		<description>Les news de l'OpenSource</description>
+		<link>http:www.mancheopenscool.fr</link>
+		<title>Titre du site</title>
+
+		<item>
+			<title>Sale temps !</title>
+			<link>http://www.meteofrance.com/accueil/link>
+				<guid isPermaLink="False">Le temps qu'il fait</guid>
+				<description>Il ne fait vraiment pas beau aujourd'hui.</description>
+				<pubDate>Fri, 6 Nov 2015 15:20:00 GMT</pubDate>
+			</item>
+
+			<item>
+				<description>Objectif : rendre leur utilisation plus facile par le plus grand nombre.</description>
+				<link>http://www.toolinux.com/Netflix-et-l-open-source</link>
+				<title>Journal de l'OpenSource</title>
+			</item>
+
+			<item>
+				<description>ZDNet</description>
+				<link>http://www.zdnet.fr/actualites/ssll-smile-veut-racheter-openwide-39827724.htm</link>
+				<title>ZDNet</title>
+			</item>
+
+		</channel>
+	</rss>
